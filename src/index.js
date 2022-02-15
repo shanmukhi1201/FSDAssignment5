@@ -1,17 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import Navbar from "./Navbar.js";
+import Featurebox from "./Featurebox.js";
+import Intro from "./Intro.js";
+import "./styles.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = () => {
+  return (
+    <>
+      <Navbar
+        n1="Docs"
+        n2="Tutorial"
+        n3="Blog"
+        n4="Community"
+        n5="v17.0.2"
+        n6="Languages"
+        n7="Github"
+      />
+      <Intro />
+      <Featurebox />
+    </>
+  );
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<App />, document.getElementById("root"));
