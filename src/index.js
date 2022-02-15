@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Navbar from "./Navbar.js";
-import Featurebox from "./Featurebox.js";
-import Intro from "./Intro.js";
+import Navbar from "./Navbar";
+import Featurebox from "./Featurebox";
+import Intro from "./Intro";
 import "./styles.css";
 
 const App = () => {

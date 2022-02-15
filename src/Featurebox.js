@@ -1,4 +1,4 @@
-import Features from "./Features.js";
+import Features from "./Features";
 
 function Featurebox(props) {
   return <Features />;
